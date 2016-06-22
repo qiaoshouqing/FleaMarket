@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sorts">
+        <item>杂物</item>
+        <item>书籍</item>
+        <item>车子</item>
+        <item>衣物</item>
+    </string-array>
+    
+    <string-array name="is_sold">
+        <item>未售出</item>
+        <item>已售出</item>
+    </string-array>
+    
+</resources>

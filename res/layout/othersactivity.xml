@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <view.SlideMenu
+        android:id="@+id/slide_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:layout_width="240dip"
+            android:layout_height="fill_parent"
+            android:fadingEdge="vertical"
+            android:scrollbars="vertical"
+            android:background="@drawable/bitmap_book_read_chapterlist_repeat">
+            <include layout="@layout/layout_menu" />
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/title_bar"
+                layout="@layout/layout_title_bar" />
+
+            <ListView
+                android:id="@+id/ListView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_bar"
+                android:divider="@null" >
+            </ListView>
+        </RelativeLayout>
+    </view.SlideMenu>
+
+</RelativeLayout>

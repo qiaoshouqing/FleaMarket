@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+	android:focusableInTouchMode="true"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/gimage"
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/background" />
+    
+    <EditText
+        android:id="@+id/gname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="名称："
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/gdescribe"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:inputType="textMultiLine"
+        android:gravity="top|left"
+        android:hint="描述："
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/gprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:hint="价格：00.0￥"
+        android:digits="1234567890." 
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/gsort"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:entries="@array/sorts"
+        android:prompt="@string/tip_sort"
+        android:textSize="16sp" />
+    
+    <Spinner
+        android:id="@+id/gis_sold"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:entries="@array/is_sold"
+        android:prompt="@string/tip_sold"
+        android:textSize="16sp" />
+</LinearLayout>
